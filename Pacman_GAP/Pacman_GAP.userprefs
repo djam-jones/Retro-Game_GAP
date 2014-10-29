@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Documents/Unity Projects/AI - FSM/Assets/Enum.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Documents/Unity Projects/Block Ninja/Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="../../../../Documents/Unity Projects/AI - FSM/Assets/Enum.cs" Line="7" Column="56" />
+      <File FileName="../../../../Documents/Unity Projects/Block Ninja/Assets/Scripts/GameManager.cs" Line="97" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

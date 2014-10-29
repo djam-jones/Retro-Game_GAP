@@ -3,32 +3,35 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
-	public float speed;
+	private SpriteRenderer frogSprites;
+	public Sprite[] frog;
 
-	void Start () {
-		rigidbody2D.AddForce(new Vector2(-speed, 0f) * Time.deltaTime);
-		this.rigidbody2D.rotation = 0;
+	void Start()
+	{
+		//frogSprites.GetComponent<SpriteRenderer>().sprite = frog[0];
 	}
 
-	void Update () {
-		if(Input.GetKey(KeyCode.UpArrow))
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.UpArrow))
 		{
-			transform.Translate(Vector3.up * speed);
-		}
-		
-		if(Input.GetKey(KeyCode.LeftArrow))
-		{
-			transform.Translate(Vector3.left * speed);
+			transform.Translate(Vector3.up * 0.625f);
 		}
 
-		if(Input.GetKey(KeyCode.DownArrow))
+		else if(Input.GetKeyDown(KeyCode.LeftArrow))
 		{
-			transform.Translate(Vector3.down * speed);
+			transform.Translate(Vector3.left * 0.625f);
 		}
 
-		if(Input.GetKey(KeyCode.RightArrow))
+		else if(Input.GetKeyDown(KeyCode.DownArrow))
 		{
-			transform.Translate(Vector3.right * speed);
+			transform.Translate(Vector3.down * 0.625f);
+		}
+
+		else if(Input.GetKeyDown(KeyCode.RightArrow))
+		{
+			transform.Translate(Vector3.right * 0.625f);
 		}
 	}
+
 }
